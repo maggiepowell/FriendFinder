@@ -1,24 +1,18 @@
 // 5. You should save your application's data inside of `app/data/friends.js` as an array of objects. Each of these objects should roughly follow the format below.
 
-// ```json
-// {
-//   "name":"Ahmed",
-//   "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
-//   "scores":[
-//       5,
-//       1,
-//       4,
-//       4,
-//       5,
-//       1,
-//       2,
-//       5,
-//       4,
-//       1
-//     ]
-// }
-// ```
-
+//Friend data
+var friends = [
+    {
+        name: "Jane Doe",
+        photo: "#",
+        scores: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+    },
+    {
+        name: "John Doe",
+        photo: "#",
+        scores: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+    }
+];
 // 6. Determine the user's most compatible friend using the following as a guide:
 
 //    * Convert each user's results into a simple array of numbers (ex: `[5, 1, 4, 4, 5, 1, 2, 5, 4, 1]`).
