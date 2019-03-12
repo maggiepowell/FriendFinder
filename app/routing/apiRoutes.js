@@ -1,3 +1,7 @@
+var path = require("path");
+var friends = require("../../server");
+
+module.exports = function(app) {
 // 4. Your `apiRoutes.js` file should contain two routes:
 
 //    * A GET route with the url `/api/friends`. This will be used to display a JSON of all possible friends.
@@ -17,3 +21,4 @@ app.post("/api/friends", function(req, res){
 
     res.json(newFriend);
 });
+};

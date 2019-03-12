@@ -11,3 +11,12 @@ var PORT = 3000;
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
+//route files tell server how to respond when user visits or requests data from a URL
+require("./app/routing/apiRoutes")(app);
+require("./app/routing/htmlRoutes")(app);
+
+//listen to start the server
+app.listen(PORT, function() {
+    console.log("App listening on PORT: " + PORT);
+  });
+  
